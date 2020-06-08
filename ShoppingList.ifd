@@ -1,0 +1,273 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "ShoppingListjs:v1",
+  "name": "ShoppingList",
+  "version": "v2.0",
+  "title": "Shopping List",
+  "if.category": "Shopping List",
+  "protocol": "js",
+  "basePath": "ShoppingList",
+  "if.dependencies": [
+    "EventEmitter.js",
+    "lodash.min.js",
+    "ShoppingList.js",
+    "ListItem.js"
+  ],
+  "icons": {
+    "x32": "Icon-ShoppingList.png"
+  },
+  "schemas": {
+    "ShoppingList": {
+      "id": "ShoppingList",
+      "type": "object",
+      "description": "ShoppingList",
+      "properties": {
+        "listItems": {
+          "title": "List Items",
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "ListItem"
+          }
+        },
+        "designModeItems": {
+          "title": "List Items - Design Mode",
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "ListItem"
+          }
+        },
+        "totalCount": {
+          "title": "Number of Items",
+          "type": "integer",
+          "readonly": true
+        },
+        "totalPrice": {
+          "title": "Total Price",
+          "type": "string",
+          "readonly": true
+        },
+        "emailBodyToSend": {
+          "title": "Email Body",
+          "type": "string",
+          "readonly": true
+        },
+		"ExportedJSON": {
+          "title": "Exported JSON",
+          "type": "string",
+          "readonly": true
+        }
+      }
+    },
+    "ListItem": {
+      "id": "ListItem",
+      "type": "object",
+      "properties": {
+        "productId": {
+          "title": "Item ID",
+          "type": "string"
+        },
+        "productName": {
+          "title": "Item Name",
+          "type": "string"
+        },
+        "productImage": {
+          "title": "Item Image",
+          "type": "string"
+        },
+        "productDescription": {
+          "title": "Item Description",
+          "type": "string"
+        },
+        "productPrice": {
+          "title": "Item Unit Price",
+          "type": "string"
+        },
+        "quantity": {
+          "title": "Item Quantity",
+          "type": "integer"
+        },
+        "totalPrice": {
+          "title": "Item Total Price",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "resources": {
+    "ShoppingList": {
+      "id": "ShoppingList",
+      "if.interfaceAsset": "true",
+      "title": "Shopping List",
+      "description": "Add and remove priced items from a list.",
+      "methods": {
+        "InitTemplate": {
+          "title": "Initialize email template",
+          "description": "Retrieves an HTML Template from a given URL",
+          "response": {
+            "type": "none"
+          },
+          "parameters": {
+            "templateURL": {
+              "type": "string",
+              "title": "Template URL",
+              "required": true
+            }
+          }
+        },
+        "AddProductInfo": {
+          "title": "Add Item",
+          "description": "Adds an item to the shopping list using the following information.",
+          "response": {
+            "type": "none"
+          },
+          "parameters": {
+            "productId": {
+              "type": "string",
+              "title": "Item ID",
+              "required": true
+            },
+            "productName": {
+              "type": "string",
+              "title": "Item Name",
+              "required": true
+            },
+            "productDescription": {
+              "type": "string",
+              "title": "Item Description",
+              "required": true
+            },
+            "productImage": {
+              "type": "string",
+              "title": "Item Image",
+              "required": true
+            },
+            "productPrice": {
+              "type": "string",
+              "title": "Item Unit Price",
+              "required": true
+            },
+            "quantity": {
+              "type": "integer",
+              "title": "Quantity",
+              "default": 1,
+              "required": true
+            }
+          }
+        },
+        "clearList": {
+          "title": "Clear list",
+          "description": "Removes all items from the list.",
+          "response": {
+            "type": "none"
+          }
+        },
+        "removeProduct": {
+          "title": "Remove item",
+          "description": "Removes the specified item from the list.",
+          "response": {
+            "type": "none"
+          },
+          "parameters": {
+            "productId": {
+              "type": "string",
+              "title": "Item ID",
+              "required": true
+            }
+          }
+        },
+        "incrementProductQuantity": {
+          "title": "Increment quantity",
+          "description": "Increments the quantity of the specified item by 1.",
+          "response": {
+            "type": "none"
+          },
+          "parameters": {
+            "productId": {
+              "type": "string",
+              "title": "Item ID",
+              "required": true
+            }
+          }
+        },
+        "decrementProductQuantity": {
+          "title": "Decrement quantity",
+          "description": "Decrements the quantity of the specified item by 1.",
+          "response": {
+            "type": "none"
+          },
+          "parameters": {
+            "productId": {
+              "type": "string",
+              "title": "Item ID",
+              "required": true
+            }
+          }
+        },
+        "setProductQuantity": {
+          "title": "Set quantity",
+          "description": "Adjusts the quantity of the specified item.",
+          "response": {
+            "type": "none"
+          },
+          "parameters": {
+            "productId": {
+              "type": "string",
+              "title": "Item ID",
+              "required": true
+            },
+            "newQuantity": {
+              "type": "integer",
+              "title": "Quantity",
+              "default": 1,
+              "required": true
+            }
+          }
+        },
+        "buildEmailBody": {
+          "title": "Create email body",
+          "description": "Creates a list summary that can be emailed using the Share Via Email interface assets.",
+          "response": {
+            "type": "none"
+          }
+        },
+		 "buildJSONForExport": {
+          "title": "Build JSON for Export",
+          "description": "Creates a JSON version of this Shopping List.",
+          "response": {
+            "type": "none"
+          }
+        }
+      },
+      "events": {
+        "MailBuilt": {
+          "id": "MailBuilt",
+          "title": "Mail created"
+        },
+        "ErrorReceived": {
+          "id": "ErrorReceived",
+          "title": "Error Received",
+          "properties": {
+            "errorMessage": {
+              "title": "Message",
+              "description": "The error message",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "WEB-1",
+      "data": "yjaPE63TwoBF4eK6cxJaCEgGBrdUL1b0XOrgRFMXJuyH3hdtwEqEf6j521J0gu4tDibcOo2zLPgyDdAPuSE1W74nm9/jB6BlJKFRSZR/TzP+u+HmcnBGj6xPAKeT4WqeoEgJ3pgRfTeeGQmbe8fDhnbsHN9MQTvQ5akiH+Jx5iOifpGHQ04MR7hUoIE//fFA6la6Emr1Rf98y5hcXKifj0cTay0fM1zIgda6UsNY3habf8O9fBzdSfRl06HNzZGRFyWEaQcJK+LNv99EC82OrnkFc04WtHJ0OYC1cKZgQxHChIGU/0X8gqR/Iew/dRDOVe4On71Gwq7LF2bX0Xs6N1uB9DILzAmMvr23IiGlg0T/g4q+qnasLiP49ZkXwd9oiH0XjPd4K2l2YtrZRE2PT4qlddT4a96vHSVUCkuXK9to7BW6p8QVLzrrlpEuye/G9VvWsl87OCS2mxIeaof70ITYw3M1CdNn6dGzh+DsvRrwnLUTWU051nB/RX0Lc+tDacsrRc4ftHuAC5Ofm7xY7sie69AIKe1H17ZwX0Wn4wTm51UeMxOhkrkE4L7wrIible0RMZP+0eb/bS9FVzha7kD0DfKCerA1oFLZK0GlFuR8y1+EeW63EbW2AkYfolu6PmY3V/lPPLAKvXYdI2zqlmQa7K5jfDwa20TwvtQqASkAmTJVUe4gceNSAyt7i1ojEBIvPS9nvkvB2+d2qqzwjkbMf6l0FNLip9o7w6/mOlYd7wESZwrnOYWddZesLJoaVLjHkeXKljsryU7/GcwmssGx/fOgIZl9Rin1RIc5TCJV3obrohKDZfo7AWu4Qivhjo1AL74AumA5TFqcAGlAItSJjsWoKKHTH3H2D/NNVq/5u8yZf7SxHlmn5eWiAvJpQTW/DEk0h5DnfyVUPU3wjzSy0lxQng4jwbh0BNa/E8TyW3UvVpoLqa8JBxYaCaNW5vIEwEbwKygeqLHVjENrOVfTv/YyKGTiTH8z1YeKovRuoAFWirxwfbmX9OxEz9of7Gj+r9rCLDWyCGVK8iVU0DkBKwOKT/is4p0cOHPpRCCHCWZUfXTC7L795+6tSO4gnWKCledKcDYkSjwRdEmLrUTnW57YbF/gOGsv51j0vZYjsPvFL74U7SN7un79V0xGFdlN7KqNpPLnlvn3VTw3EjoUivyltnDcBeeoLQBk7pq+eT7ZYQxYz2r3zH32l+ldMvH7JnK0U0Goy0DP74tq+XrWZowFDTzopGs7MOA3XbfFPsHZchwSM85EVMpBoa2ghpVabw2gmHnmXDwxyOEfD8OLjDzREAaebDixodTUlOpPXPAvbZMH44yS2ZtY298uYTTlwD4BGK+h4gFrjwTHulLs4ytCghwH6CcsPUJO+EvWmTkKFU73buv+cR1GiyByTqYkyJ6nCvb1638ZjSGf9x3aECTUccpASEhJTlLa9j0Dw27NoPKjiAQw2cS7CZOgXduM5Y8wOUhfYdoFc4AVx3Qo7MXhTRgFo81lotZ2tSVX558PQLWRFT3NdwkGWvXln0/gLn7vGJq/7yNgX9OzZ54K5XABIAHNVeodlteuZPkp6Eqn8HewR/HX2AxPQb7QiuReLdwYY6TXfo5MP5rk4XlpUkaVOHDgf9Tz0S2Tf0FlV+cqCM2U/EAnkndU0AkhGiXURHpvxvghL7PzDsMru+h5UgTpwUtfUbrqBd+sw9s/JvePt/9R/P+BjFM5OEjy8Tsvy0lJXWYUy05JNYyOrxBTD3L9aH+t1bfe8quEC8plmyC9uDkMb5YQUztnduUDlW6GPz3e5K1w04c3u6Bd1ZJ5FSlT/U6NrUiRjieC13q73af687rk/hwlLywf5KDHtqdAhM5YbW9ue+xZyirtxw==",
+      "key": "bEmrHwRJh+6Bt/Wxvov8oRfnEEKrEJ64iedEhX1Nwg5m/o25+Vrdc6eBVJjnAbDRffJ2+03zXoF6Ji/wVgCe5p+TpY6uJka9EyZG/K3ISzt3l6q/0R4Ecl8vR5rHr/LSCCPpK+ciosmAvWf569oHFfcOBbzl70vKi3+j8BWO92FV0k5S5IDFqQqDPbQIbnfYviJ0W2oj2ptyXvFzmF11xA4IDWvqlZZkqUMzKTXvjcEzXD5b4ARNsf82nso/1f2v2qfcBYpvpAOtrsPvi+X6ZX2wwz+awxnpDH7/FAEduvhl5Qb7fOHHvL9ncMtGgE4n5JQyV0JCYUtxpVOTnWId3Q==",
+      "iv": "b01E1GZ29tpnYrbPJhsNRlaS0jCzHKY0S6XaTsKL4dPIvLRBqCcl1/64O1PuUvkvxduSmGJLvjQez0HyT0KVA3/VtfK4G3KCHaD4W46Y4dgq6+MitohDuCvxCqikt8Vs5mtzKX8ePYe/5LMggxzZyqCwV+TMFnBlcnaQW7j5X3wE2RS0aMnt/EMu4QjNdKaGAB2WAOXZHNe6pLBCwhtcN/Ba8tZ5XYzkyJRErmQMFP8yDkUK1JQiqwu3QTD9A+iAprg6NchVU3fnTfKPu6gg55L21RKOo6MyqZ792ukvqCKbFJU9RcdM7SmSItGhfhgSGkUGpjmuunCg71vN0Q2avw=="
+    }
+  }
+}
