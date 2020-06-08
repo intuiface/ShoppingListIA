@@ -14,7 +14,7 @@ pipeline {
           def files = findFiles(glob: '**/Cryptifix-x64-*.zip')
           unzip zipFile: "cryptifix\\${files[0].name}", dir: 'cryptifix'
         }
-        bat "cryptifix\\Cryptifix.exe sign \"\\ShoppingList\" --LicenseEdition=FREE --IsAllowedByNonInteractivePlayer=false"
+        bat "cryptifix\\Cryptifix.exe sign \"ShoppingList\" --LicenseEdition=FREE --IsAllowedByNonInteractivePlayer=false"
       }
     }
 
