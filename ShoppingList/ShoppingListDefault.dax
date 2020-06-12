@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="28" Name="ShoppingListDefault" Description="" Category="ShoppingList" Author="Intuiface" AuthorId="Intuiface" Icon="ShoppingListDefault.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="18484" OriginalXpId="1-80d43a2a-446c-4cc9-b4ee-0bda23d95fee">
+  <MashupPresentation ContextAlias="CURRENT_PRESENTATION" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/ShoppingList-DefaultDA">
+    <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="ShoppingList-DefaultDA" Id="" DataPath="" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.5.5" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2020-06-12T16:13:21.2749745Z" SnapshotPath="player://data/Snapshots/default.png">
+      <Layers />
+      <Spaces />
+      <SharedContracts />
+      <Converters />
+      <ExternalAssets />
+      <Resources />
+      <Sequence />
+    </Presentation>
+  </MashupPresentation>
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/ShoppingList-DefaultDA/Scene 1">
+    <Space Name="Scene 1" AutoReset="false" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_2" OriginalAbsoluteVisualPath="player://visuals/ShoppingList-DefaultDA/Scene 1/Layer 1/Default_template_for_FaceDetection" CreateAsCollectionSibling="true">
+    <Collection Name="Default_template_for_FaceDetection" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Visual" Name="ItemWidth"><![CDATA[value:1200]]></Property>
+        <Property Type="Visual" Name="ItemHeight"><![CDATA[value:600]]></Property>
+        <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:972]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:972]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:896]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:896]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D1D1D1]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:486]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:448]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:973]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:896]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="SHOPPING LIST" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[value:SHOPPING LIST]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+          <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:486]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:29]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:972]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:49]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Group separator Title" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:471]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:54]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:940]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Properties" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:486]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:329]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:973]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:973]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:550]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:550]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="Product" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:24]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Product]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Verdana</Family>
+                <Stretch>normal</Stretch>
+                <Weight>700</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Container" Name="X"><![CDATA[value:301]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:82]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:255]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Quantity" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:24]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Verdana</Family>
+                <Stretch>normal</Stretch>
+                <Weight>700</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Quantity]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:600]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:83]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:255]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Price" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:24]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Verdana</Family>
+                <Stretch>normal</Stretch>
+                <Weight>700</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Price]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:855]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:83]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:255]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Collection Name="List Items - Design Mode" Visual="AssetGrid" Style="" Container="Default" ContainerStyle="">
+          <Properties>
+            <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="FillDirection"><![CDATA[value:TopToBottom]]></Property>
+            <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Axis"><![CDATA[value:Vertical]]></Property>
+            <Property Type="Visual" Name="Columns"><![CDATA[value:1]]></Property>
+            <Property Type="Visual" Name="InitialScrollEffect"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ShowScrollIndicator"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:473]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:264]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:946]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:311]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:975]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:102]]></Property>
+            <Property Type="Visual" Name="CenterJustify"><![CDATA[value:False]]></Property>
+          </Properties>
+          <DataSourceProvider>
+            <DataSource>
+              <Contract Uri="mashup://externals/Shopping%20List/listItems" />
+            </DataSource>
+            <Master>
+              <Collection Name="Template for items of List Items - Design Mode" Visual="Group" Style="" Container="Static" ContainerStyle="">
+                <Properties>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+                  <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+                  <Property Type="Visual" Name="ItemWidth"><![CDATA[value:75]]></Property>
+                  <Property Type="Visual" Name="ItemHeight"><![CDATA[value:250]]></Property>
+                  <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="InitialWidth"><![CDATA[value:975]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:975]]></Property>
+                  <Property Type="Visual" Name="InitialHeight"><![CDATA[value:102]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:102]]></Property>
+                </Properties>
+                <Asset Name="Item Name 1" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                  <Properties>
+                    <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/productName]]></Property>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Verdana</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                    <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                    <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:324]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:337]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:58]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Image" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                  <Properties>
+                    <Property Type="Domain" Name="Source"><![CDATA[current://DomainComponent/productImage]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fit]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:83]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:87]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:102]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Substract btn" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+                  <Attachments>
+                    <EventTrigger EventType="Visual" EventName="Released">
+                      <InvokeService Target="mashup://externals/Shopping%20List/" Type="Domain" Name="decrementProductQuantity" Delay="value:0">
+                        <ServiceValueParameter ParamName="productId" Value="current://DomainComponent/productId" />
+                      </InvokeService>
+                    </EventTrigger>
+                  </Attachments>
+                  <Properties>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Segoe UI</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                    <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                    <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/80fc02ab-7019-459f-b769-f5c3d1f59e74]]></Property>
+                    <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/e2ac2871-78f3-4237-bb09-6994db666589]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:538]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Item Quantity 1" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                  <Properties>
+                    <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/quantity]]></Property>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Verdana</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                    <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                    <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:603]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:58]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Add btn" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+                  <Attachments>
+                    <EventTrigger EventType="Visual" EventName="Released">
+                      <InvokeService Target="mashup://externals/Shopping%20List/" Type="Domain" Name="incrementProductQuantity" Delay="value:0">
+                        <ServiceValueParameter ParamName="productId" Value="current://DomainComponent/productId" />
+                      </InvokeService>
+                    </EventTrigger>
+                  </Attachments>
+                  <Properties>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Segoe UI</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                    <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                    <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/1b2f85b2-b586-42c6-aef2-ad039927aadb]]></Property>
+                    <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/09815ccd-cfe2-453c-a273-722e432e354b]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:670]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:45]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:44]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Item Total Price 1" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                  <Properties>
+                    <Property Type="Domain" Name="Text">
+                      <ConvertedValue ConverterName="value:computeOutput" ConverterInstance="mashup://converters/NumeralBC/">
+                        <ServiceValueParameter ParamName="language" Value="value:en-us" />
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/totalPrice" />
+                        <ServiceValueParameter ParamName="format" Value="value:$ 0.00" />
+                      </ConvertedValue>
+                    </Property>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Verdana</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                    <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                    <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:795]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:153]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:58]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Delete Btn" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+                  <Attachments>
+                    <EventTrigger EventType="Visual" EventName="Released">
+                      <InvokeService Target="mashup://externals/Shopping%20List/" Type="Domain" Name="removeProduct" Delay="value:0">
+                        <ServiceValueParameter ParamName="productId" Value="current://DomainComponent/productId" />
+                      </InvokeService>
+                    </EventTrigger>
+                  </Attachments>
+                  <Properties>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Segoe UI</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                    <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                    <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/1b2f85b2-b586-42c6-aef2-ad039927aadb]]></Property>
+                    <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/09815ccd-cfe2-453c-a273-722e432e354b]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:921]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+              </Collection>
+            </Master>
+          </DataSourceProvider>
+        </Collection>
+        <Asset Name="PROPERTIES" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:PROPERTIES]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:23]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:36]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Number of Items 1" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Number of Items]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:617]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:476]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Number of items - value" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Shopping%20List/totalCount]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:837]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:476]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Total Price 1" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Total Price]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:618]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:503]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Totel Price - Value" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text">
+              <ConvertedValue ConverterName="value:computeOutput" ConverterInstance="mashup://converters/NumeralBC/">
+                <ServiceValueParameter ParamName="language" Value="value:en-us" />
+                <ServiceValueParameter ParamName="input" Value="mashup://externals/Shopping%20List/totalPrice" />
+                <ServiceValueParameter ParamName="format" Value="value:$ 0.00" />
+              </ConvertedValue>
+            </Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:838]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:503]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Group separator Top" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:471]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:604]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:940]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Actions" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:486]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:692]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:972]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:972]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:176]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:176]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="ACTIONS" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:ACTIONS]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:152]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:36]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Add item" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Add item]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:158]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:58]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Add" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Shopping%20List/" Type="Domain" Name="AddProductInfo" Delay="value:0">
+                <ServiceValueParameter ParamName="quantity" Value="value:1" />
+                <ServiceValueParameter ParamName="productId" Value="value:1" />
+                <ServiceValueParameter ParamName="productName" Value="value:Default Item" />
+                <ServiceValueParameter ParamName="productDescription" Value="value:Default Description" />
+                <ServiceValueParameter ParamName="productPrice" Value="value:9.99" />
+                <ServiceValueParameter ParamName="productImage" Value="value:http://data.intuilab.com/samples/5.2/ShoppingList/product-icon.png" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Add]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:396]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:58]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:140]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Clear list" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Clear list]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:158]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Clear" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Shopping%20List/" Type="Domain" Name="clearList" Delay="value:0" />
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Clear]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:396]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:140]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Create email body" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Create email body]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:158]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:148]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Create Email Body" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Shopping%20List/" Type="Domain" Name="buildEmailBody" Delay="value:0" />
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Create Email Body]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:396]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:148]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:139]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Group separator Middle" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:471]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:796]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:940]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Triggers" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:846]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:100]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:100]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="TRIGGERS" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:TRIGGERS]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:161]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:36]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Email body created" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Email body created]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:173]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:54]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:259]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Feedback - Email body created" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+          <Properties>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF7D00A3]]></Property>
+            <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Effects">
+              <EffectsCollection>
+                <Blur Radius="4" />
+              </EffectsCollection>
+            </Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:324]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:54]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:12]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:12]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Shopping List" DescriptorPath="player://resources/b0643de3-be28-47e6-8b37-00c505fc6605" ExternalAssetName="ShoppingList">
+      <Attachments>
+        <PresentationEventTrigger EventType="Domain" EventName="MailBuilt" TypeList="All">
+          <Conditions Operator="And" />
+          <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_FaceDetection/Group%20Triggers/Feedback%20-%20Email%20body%20created/" Type="Container" Name="Show" Delay="value:0">
+            <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:True" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.2" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:3" />
+          </InvokeService>
+        </PresentationEventTrigger>
+      </Attachments>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="80fc02ab-7019-459f-b769-f5c3d1f59e74" Type="uri" Length="14043" LastModificationDate="2015-12-15T16:34:06.2402193Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Minus-Released_1.png">
+      <Alternate Value="player://data/Generated/331f03feac86db69144a723f7de46630.png" Width="45" Height="45" Length="1213" LastModificationDate="2020-06-12T16:10:18.0698469Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="e2ac2871-78f3-4237-bb09-6994db666589" Type="uri" Length="13094" LastModificationDate="2015-12-17T10:10:24.8054518Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Minus-Pressed_2.png">
+      <Alternate Value="player://data/Generated/01a49ec44b19affe94ddceb0a88f80bd.png" Width="45" Height="45" Length="1675" LastModificationDate="2020-06-12T16:10:18.0698469Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="1b2f85b2-b586-42c6-aef2-ad039927aadb" Type="uri" Length="9608" LastModificationDate="2015-12-15T16:30:12.1521439Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Circle-Close-Black-Released.png">
+      <Alternate Value="player://data/Generated/eea704ad773481ff3e1646f6ad7a32cb.png" Width="128" Height="128" Length="4955" LastModificationDate="2020-06-12T16:10:18.0698469Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="09815ccd-cfe2-453c-a273-722e432e354b" Type="uri" Length="11305" LastModificationDate="2015-12-15T16:31:52.4395405Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Circle-Close-Black-Pressed.png">
+      <Alternate Value="player://data/Generated/56ad22cf77530beab3e78c3c3eaffaef.png" Width="128" Height="128" Length="5945" LastModificationDate="2020-06-12T16:10:18.0698469Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupExternalConverters>
+    <ExternalAsset Name="NumeralBC" DescriptorPath="player://resources/0463702e-f706-4ad3-a072-c7947a1997bd" ExternalAssetName="NumeralBC" />
+  </MashupExternalConverters>
+  <MashupResource>
+    <Resource Key="b0643de3-be28-47e6-8b37-00c505fc6605" Type="uri" Length="9986" LastModificationDate="2020-06-05T16:55:19.5137102Z" DefaultValue="player://data/InterfaceAssets/ShoppingList/ShoppingList.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/ShoppingList/email_template.html" Length="8706" LastModificationDate="2020-06-08T13:56:38.9620998Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ShoppingList/EventEmitter.js" Length="16040" LastModificationDate="2014-11-04T15:52:57.757Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ShoppingList/Icon-ShoppingList.png" Length="2094" LastModificationDate="2016-01-05T16:37:43.6923643Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ShoppingList/ListItem.js" Length="2524" LastModificationDate="2020-06-03T18:23:49.3265593Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ShoppingList/lodash.min.js" Length="50565" LastModificationDate="2015-07-16T15:40:31.77Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ShoppingList/ShoppingList.js" Length="8973" LastModificationDate="2020-06-08T13:20:57.6441648Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="0463702e-f706-4ad3-a072-c7947a1997bd" Type="uri" Length="5368" LastModificationDate="2020-05-18T19:14:52Z" DefaultValue="player://data/InterfaceAssets/NumeralBC/NumeralBC.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/NumeralBC/icon_numeral_32.png" Length="220" LastModificationDate="2020-05-18T19:11:42Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/NumeralBC/languages.js" Length="26547" LastModificationDate="2020-05-18T19:11:42Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/NumeralBC/numeral.js" Length="24576" LastModificationDate="2020-05-18T19:11:42Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/NumeralBC/NumeralBC.js" Length="2032" LastModificationDate="2020-05-18T19:11:42Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+  </MashupResource>
+</Mashup>

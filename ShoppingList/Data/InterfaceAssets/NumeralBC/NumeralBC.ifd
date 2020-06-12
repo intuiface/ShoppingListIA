@@ -1,0 +1,133 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "NumeralBCjs:v1",
+  "name": "NumeralBC",
+  "version": "v1.2",
+  "if.category": "Number Format",
+  "protocol": "js",
+  "basePath": "NumeralBC",
+  "if.dependencies": [
+    "numeral.js",
+    "languages.js",
+    "NumeralBC.js"
+  ],
+  "schemas": {
+    "NumeralBC": {
+      "id": "NumeralBC",
+      "type": "object",
+      "description": "NumeralBC"
+    }
+  },
+  "icons": {
+    "x32": "icon_numeral_32.png"
+  },
+  "resources": {
+    "NumeralBC": {
+      "id": "NumeralBC",
+      "if.interfaceAsset": "true",
+      "methods": {
+        "computeOutput": {
+          "id": "NumeralBC.computeOutput",
+          "if.converter": true,
+          "title": "Format",
+          "description": "Format a number. Click [url=http://support.intuilab.com/kb/binding-and-value-converters/number-format-converter]here[/url] for help.",
+          "path": "computeOutput",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "format": {
+              "type": "string",
+              "description": "format value",
+              "title": "Format",
+              "default": "0.00"
+            },
+            "language": {
+              "type": "string",
+              "description": "lorem ipsum",
+              "title": "Language",
+              "enum": [
+                "chs",
+                "cs",
+                "da-dk",
+                "be-nl",
+                "nl-nl",
+                "de-ch",
+                "de",
+                "en-gb",
+                "en-us",
+                "es-sp",
+                "es",
+                "et",
+                "fi",
+                "fr-CA",
+                "fr-ch",
+                "fr",
+                "hu",
+                "it",
+                "ja",
+                "pl",
+                "pt-br",
+                "pt-pt",
+                "ru-UA",
+                "ru",
+                "sk",
+                "th",
+                "tr",
+                "uk-UA"
+              ],
+              "enumTitle": [
+                "Chinese - Simplified",
+                "Czech",
+                "Danish - Denmark",
+                "Dutch - Belgium",
+                "Dutch - Netherlands",
+                "German - Switzerland",
+                "German - Germany",
+                "English - United Kingdom",
+                "English - United States",
+                "Spanish - Spain",
+                "Spanish - Mexico",
+                "Estonian",
+                "Finnish",
+                "French - Canada",
+                "French - Switzerland",
+                "French - France",
+                "Hungarian",
+                "Italian - Italy",
+                "Japanese",
+                "Polish",
+                "Portuguese - Brazil",
+                "Portuguese - Portugal",
+                "Russian - Ukraine",
+                "Russian - Russia",
+                "Slovak",
+                "Thai",
+                "Turkish",
+                "Ukrainian - Ukraine"
+              ],
+              "default": "en-us"
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "ReF19qI9ciQDpkv4+tfCdi8aN41tkoyOnxD+UMgLZYo=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN2",
+      "v": 2,
+      "data": "fefsopmkzzo8GDuCVx6Cq9JReFOiUioHO5uOvUOpOTumejcXRxOFWGZ/JLMlnMfJO7bI0y7zNniiMBLCDkjjbIKc3pN+5l4V8MuBzUOj0D6maKAHqkjzjiEpkQo+Eo1YX5pRpih2/BJNWNPB8A7C3ARU9+C50m4PVCgmvO3JYt1WfBMrL+wj81ctYM/n5jSZrhrKiH7QkmmDvO6esxsMB7AcoDMTM/LNAtQcbpBJ7wjPV4LG6swV2bUCVf4CQ7P3HfjIQM4BL3jfB/Nsd9V/nvp2IH1/OLQYWOkbNEbGvhs/y7ypbHfmdjViBzklBj6xYzo8FhpG3/0XczAbeTeMCIEcyESOUQBi69Yv5oc/2zN+Z1MGfKpdyuAzFeXRkpQO1fm18Xaw2V/5lU2KCSyoWg0baRL9JvdS1QymrUzi1SHuikphogZaFyEz7DknwBfAKTJsi+JDlavfrh+jrjH23XhQhNm8gymZwI1E74R1FCO4cnOjll0Wr9amNm8btDHPaVbN+cE2evhlKjztIy9FSE5eXuc1FscxzPtJN/lXLuhb4zQaXuTH+k6r/1alLQymXaZCHXVDlHtcNyQ+hxfDn63aObWYL1smnI1V1OslBrTuhKAfibtixBeIalFV+eKuvcbBh8xicLJY+1IuGPB+57GoIaXVm8GF7XDs1YCfGAqh5KZOhKOBCRtcJzys5fcczhbM7HRFz8Ar4rY6BOWS7VB93hp6n1wlUUHAa/GxWdEPz3luILSW9JSDjnt6XZI9OchtGTZRFnDzwKHrK6YVyd7IqAlzBTg9yOo5wf6DU6xMz1s6hnc362Y8iNeVn36+syXoAEBK0O/nFZwZlmUdDq+r8LWfamAAgSLXhWSqiUOLMer3h0iRcas4wYw9djK/pyqldF8fWfqhPLPMvlyix9+J+JQLaSKSi8vGzxh8FF7e/cKi/1WpZ23BB3jPgkuYaG0vW4Ic1rRCC1sr7LytZ63BofvU4nyBHbrD8FCZvAKTP8k4QlvJiTKFZaWtKF/xZv797w8wlAeLdnu3xxtE4Q==",
+      "key": "I8nSaFWdhvieT6mIZvcIIbB3mVyAJm7Z1VbZUvsAg9Afy4elb5yCxHA5qnPq92j3BYKWnTKJkqPLkrcgPlbcmH+hnBQR+UB2/BhYJkliSQZFFjnlLR4ZQWaDpEse0WcLEYrQCDsJOAuukxL2Yb+yCrzRTMSBZAMNy/spUn7T8Bt9kvBdVxJuIaiSXHz9OH0tOKmevRDGc4LoquMjtCVgr3iWhkAAJVeHMyB4t9DYLxoLUzCEn+apZpj6P+qFYXDpdnzlQ5zQQtLMOMXP0q4C1OX/efPqYpZrc475O/cSw/iw1Xi+LQ/b3fgk9g9XZ666aEm0hvxSzGdEAHz5fXloTA==",
+      "iv": "jcGSrtsjZ9KNVfjIWrP4WQvdG5TD72E58rmPGbQl2PC9Tdmg9fJUjhglTsZ6EUwxUsHWmtAFgGvKYjK3msOZ/2/YS3ZwUvX6e6fTI/mK7jAqkDCiu358HlQYYtfOC12PF1zf3OaLhNW2tKRARFuTWFXqX0ep1IxhNV/HbOd7T+3c5KLqOHcgLMEWXQMv5XchgQ1/BBZTWBoA2W7yRb+4oTHqp6AdDGvgJUg9KsD0UpDA+ubtQzV8P/l5tPDOgOT1zkRNItmA/ee5qKrJx+3pfiJOZMWamFQmiqEoFrxpxW1bPiaNcLNXpddguwChHPYmJl/KJrbq1j0I0pPzF3uSYw=="
+    }
+  }
+}

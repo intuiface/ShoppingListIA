@@ -102,7 +102,6 @@
       "if.interfaceAsset": "true",
       "title": "Shopping List",
       "description": "Add and remove priced items from a list.",
-      "if.templateDesignAccelerator": "ShoppingListDefault.dax",
       "methods": {
         "InitTemplate": {
           "title": "Initialize email template",
